@@ -1,0 +1,133 @@
+* {
+    font-family: "Outfit";
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+i {
+    margin-right: 2%;
+}
+
+hr {
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+}
+
+.nft-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 9px;
+    margin: 10% auto;
+    padding: 20px;
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.5%;
+    border-radius: 7px;
+    background: hsla(178, 100%, 50%, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+    opacity: 0;
+}
+
+.nft-img {
+    height: auto;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.nft-title {
+    color: white;
+    padding: 20px 0;
+    font-size: 22px;
+    transition: color 0.25s;
+}
+
+.nft-description {
+    padding: 0 0 20px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.price-and-time-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-price {
+    width: 30%;
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+}
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+}
+
+.clock-icon {
+    position: relative;
+    top: 2px;
+}
+
+.creator-image {
+    width: 12%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.creator-attribution {
+    float: right;
+    padding-right: 90px;
+    padding-top: 8px;
+    color: hsl(215, 51%, 70%);
+}
+
+.creator-name {
+    color: white;
+    transition: color 0.25s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.nft-title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.creator-name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 425px) {
+    .nft-card {
+        width: 85%;
+    }
+
+    .creator-attribution {
+        padding-top: 1.5%;
+        padding-right: 12.5%;
+    }
+}
